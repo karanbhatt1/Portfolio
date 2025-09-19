@@ -9,9 +9,13 @@ function App() {
 
   return (
    <>
-   <Header/>
-   <Outlet/>
-   <Footer/>
+   <div className="bg-black h-svh w-svw">
+    <Header/>
+    <Outlet/>
+    <Footer/>
+
+   </div>
+   
    </>
   )
 }

@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import Github from "../Github";
+import Proffession from "./Proffession";
 
 export default function About() {
   return (
-     <div>
-        <h1 className='bg-rose-500 text-5xl m-4 p-3 text-center'> this is about me: </h1>
-     </div>
+    <div className="z-0">
+
+     
+      <div className="flex flex-row p-4 items-center justify-center bg-sky-900 h-max z-10">
+      <Proffession/>
+      <Github/>
+      </div>
+      
+    </div>
   );
 }
