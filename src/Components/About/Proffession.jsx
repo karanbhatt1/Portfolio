@@ -3,8 +3,8 @@ import React from 'react'
 const Proffession = () => {
   return (
     <div>
-        <p className="text-yellow-400 text-xl">
-        <span className="text-3xl text-orange-500">Hello!</span>I am Karan Bhatt.
+      <span className="text-3xl text-orange-500 text-center">Hello! I am Karan Bhatt.</span>
+      <p className="text-yellow-400 text-xl text-justify">        
         Self Motivated, curious and passionate individual about tech.
         I am student persuing my Bachelors in computer science and engineering 
         from Graphic Era Hill University.

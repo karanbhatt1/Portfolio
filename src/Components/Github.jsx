@@ -12,7 +12,7 @@ const Github = () => {
     },[])
 
     return(
-        <div className='flex flex-col h-full w-full rounded-full border-solid border-4 border-green-400 backdrop-blur-lg'>
+        <div className='flex flex-col rounded-full border-solid border-4 border-green-400 backdrop-blur-lg'>
             <img className=" h-full w-full rounded-full" src={data["avatar_url"]} alt="image" />
         </div>
     )
