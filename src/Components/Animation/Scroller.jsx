@@ -5,6 +5,7 @@ const Scroller = ()=>{
     return <motion.div style={{
                     scaleX: scrollYProgress,
                     position: "fixed",
+                    zIndex:50,
                     top: 0,
                     left: 0,
                     right: 0,

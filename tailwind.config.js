@@ -7,7 +7,7 @@ export default {
   theme: {
     fontFamily: {
       'sans': ['roboto','ui-sans-serif', 'system-ui'],
-      'serif': ['ui-serif', 'Georgia'],
+      'serif': ['Georgia','ui-serif'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Oswald'],
       'body': ['"Open Sans"'],

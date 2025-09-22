@@ -1,9 +1,9 @@
 import {Link,NavLink} from "react-router-dom"
+import "../../Styles/head.css"
 const Header = () => {
   return (
-    <>
-      <header className=" h-max w-svw justify-center flex flex-row p-3 ">
-        <div className="w-svw flex flex-row justify-center gap-2">
+      <header className="posset h-max self-center head justify-center flex flex-row p-3">
+        <div className="head flex flex-row justify-center gap-2">
           <div className=" backdrop-blur-sm p-5 w-4/6 flex flex-row gap-1 justify-center items-center bg-teal-700/60 rounded-xl">
             <ul
               className="w-svw text-2xl text-white font-serif flex gap-0 items-center flex-row justify-evenly"
@@ -59,7 +59,6 @@ const Header = () => {
           </button>
         </div>
       </header>
-    </>
   );
 };
 

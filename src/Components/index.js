@@ -1,7 +1,11 @@
-import Header from "./Header/Header";
-import Education from "./Education";
-import Footer from "./Footer/Footer";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import About from "./About/About"
+export {default as About} from "./About/About"
+export {default as Proffession} from "./About/Proffession"
+export {default as Contact} from "./Contact"
+export {default as Projects} from "./Projects"
+export {default as Skills} from "./Skills"
+export {default as Education} from "./Education"
+export {default as Github} from "./Github"
+export {default as Header} from "./Header/Header"
+export {default as LiquidEther} from "./Backgrounds/LiquidEther"
+export {default as Scroller} from "./Animation/Scroller"
+export {default as Footer} from "./Footer/Footer"
