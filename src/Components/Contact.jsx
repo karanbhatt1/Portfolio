@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
-
+import "../Styles/contact.css"
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -43,7 +43,7 @@ const Contact = () => {
     window.open(url, "_blank").focus();
   }
   return (
-    <div id="contact" className="w-8/12 p-3 bg-amber-300/60 rounded-md">
+    <div id="contact" className="p-3 cttc w-8/12  bg-amber-300/60 rounded-md self-start">
       <form className="flex flex-col gap-3 justify-center">
         <label
           htmlFor="name"
