@@ -1,4 +1,8 @@
-import {Link,NavLink} from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link';
+
+
+
+
 import "../../Styles/head.css"
 const Header = () => {
   return (
@@ -10,35 +14,25 @@ const Header = () => {
               style={{ listStyle: "none" }}
             >
               <li>
-              <NavLink to="/about-me" className={({isActive})=>
-                `${isActive ? "text-black rounded-lg p-2 bg-lime-500" : ""}`
-              }>
+              <Link smooth to="#about"  className=" cursor-pointer hover:text-yellow-300">
                 About-Me
-              </NavLink>
+              </Link>
               </li>
 
-              <li><NavLink to="/education" 
-              className={({isActive})=>
-                `${isActive ? "text-black rounded-lg p-2 bg-lime-500" : ""}`
-              }>
+              <li><Link smooth to="#Education" className="cursor-pointer hover:text-yellow-300">
                 Education
-              </NavLink></li>
-              <li> <NavLink to="/skills" className={({isActive})=>
-                `${isActive ? "text-black rounded-lg p-2 bg-lime-500" : ""}`
-              }>
+              </Link></li>
+              <li> <Link  smooth to="#skills" className="cursor-pointer hover:text-yellow-300">
                 Skills
-              </NavLink></li>
-              <li> <NavLink to="/projects"  className={({isActive})=>
-                `${isActive ? "text-black rounded-lg p-2 bg-lime-500" : ""}`
-              }>
+              </Link></li>
+              <li> <Link  smooth to="#projects" className="cursor-pointer hover:text-yellow-300">
          
                 Projects
-              </NavLink></li>
-              <li> <NavLink to="/contact-me" className={({isActive})=>
-                `${isActive ? "text-black rounded-lg p-2 bg-lime-500" : ""}`
-              }>
+              </Link></li>
+              <li> <Link smooth = {true}
+               to="#contact" className="cursor-pointer hover:text-yellow-300">
                 Contact-Me
-              </NavLink></li>
+              </Link></li>
             </ul>
           </div>
           <button

@@ -1,0 +1,12 @@
+/* glass.css */
+.glass-card{
+  background: rgba(255,255,255,0.12);      /* tint + transparency */
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);      /* safari */
+  /* optional: smooth edges */
+  overflow: hidden;
+}

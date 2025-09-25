@@ -1,5 +1,5 @@
 import { Outlet } from "react-router"
-import {Header,About,Education,Scroller} from "./Components/index"
+import {Header,About,Education,Scroller, Contact,Skills} from "./Components/index"
 // Link --> tag is used to reload a part of page.
 // Attribute of Link :  to = '' for href = ''
 // NavLink --> provide additional things.
@@ -7,11 +7,14 @@ import {Header,About,Education,Scroller} from "./Components/index"
 function App() {
   return (
    <>
-   <div className="bg-black h-svh m-0 p-0 flex flex-wrap justify-center">
+   <div className="bg-black m-0 p-0 flex flex-wrap justify-center">
     <Scroller/>
     <Header/>
-    <main className="bg-black">
-      <Outlet/>
+    <main className="flex flex-col items-center bg-black">
+      <About/>
+      <Education/>
+      <Skills/>
+      <Contact/>
     </main>  
    </div>
    

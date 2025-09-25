@@ -1,19 +1,32 @@
-.explorebtn{
-    position:absolute;
-    top: 75%;
-    left: calc(50% - 200px);
-}
-/* .con{
-    animation: scrolling ease-in-out;
-    animation-duration: 3s;
-    animation-delay:50ms;
-    animation-timing-function: view()j;
-}
 .prof{
-    animation: scrl ease-in;
-    animation-duration:6s;
-    animation-duration: 50ms;
-} */
+    animation: scrolling;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.anime{
+    animation: movex 2s linear 1 forwards;
+}
+
+
+@keyframes movex {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    25%{
+         opacity: 0.2;
+        transform: translateX(-50px);
+    }
+    75%{
+         opacity: 0.7;
+        transform: translateX(-25px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    } 
+}
 @keyframes scrl {
     0%{
         opacity: 0;
@@ -52,15 +65,3 @@
     }
     
 }
-/* .about{
-    width: 99vw;
-    position: absolute;
-    left: 0;
-    top: 6rem;
-    z-index:1;
-} */
-/* .effect{
-    width: 98.5vw;
-    position:absolute;
-    z-index: -1;
-} */
