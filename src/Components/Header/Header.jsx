@@ -1,14 +1,17 @@
 import { HashLink as Link } from 'react-router-hash-link';
-
+import { motion } from 'framer-motion';
 
 
 
 import "../../Styles/head.css"
 const Header = () => {
+  const previewR = () => {
+    window.open("./KaranBhattResume.pdf", "_blank", "noopener,noreferrer");
+  };
   return (
       <header className="posset h-max self-center head justify-center flex flex-row p-3">
         <div className="head flex flex-row justify-center gap-2">
-          <div className=" backdrop-blur-sm p-5 w-4/6 flex flex-row gap-1 justify-center items-center bg-teal-700/60 rounded-xl">
+          <div className=" backdrop-blur-sm p-5 w-4/6 flex flex-row gap-1 justify-center items-center bg-teal-700/80 rounded-xl">
             <ul
               className="w-svw text-2xl text-white font-serif flex gap-0 items-center flex-row justify-evenly"
               style={{ listStyle: "none" }}
@@ -35,11 +38,13 @@ const Header = () => {
               </Link></li>
             </ul>
           </div>
-          <button
+          <motion.button
+          whileHover={{scale:1.1}}
+          whileTap={{scale:0.95}}
             type="button"
             className="cursor-pointer 
           rounded-xl 
-          bg-green-500/50
+          bg-green-500
           w-40 text-wrap p-2 
           text-center 
           text-xl
@@ -48,9 +53,10 @@ const Header = () => {
           hover:bg-amber-400
           hover:text-3xl
           "
+          onClick={previewR}
           >
             Preview Resume
-          </button>
+          </motion.button>
         </div>
       </header>
   );

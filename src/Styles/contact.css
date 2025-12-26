@@ -1,6 +1,8 @@
 .cttc{
-    position: relative;
-    top: 5%;
     width:30rem;
     height:50%;
+    margin-bottom:2%;
+    margin-top: 2%;
+
+    align-self: center;
 }

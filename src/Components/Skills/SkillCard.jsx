@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 import {skills_data} from "../index";
-import "../../Styles/skills.css"
 function SkillCard() {
   const [view, setView] = useState("grid");
   return (
-    <div className="skl bg-gray-900 text-white rounded-2xl shadow-lg p-6 w-full max-w-4xl">
+    <div id="skills"  className="skl flex items-center justify-center rounded-md border-white border-2 p-5 scroll-mt-24">
+    <div className="bg-gray-900 text-white rounded-2xl shadow-lg p-6 w-full max-w-4xl">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">My Skills</h2>
         <button
@@ -38,6 +38,7 @@ function SkillCard() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

@@ -3,6 +3,14 @@ import React from 'react'
 import { BrowserRouter, HashRouter } from 'react-router'
 import { createRoot } from 'react-dom/client'
 import './Styles/index.css'
+import './Styles/about.css'
+import './Styles/background.css'
+import './Styles/contact.css'
+import './Styles/skills.css'
+import './Styles/proffession.css'
+import './Styles/vertical.css'
+import './Styles/head.css'
+
 import App from './App.jsx'
 
 
